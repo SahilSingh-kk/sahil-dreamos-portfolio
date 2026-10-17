@@ -1,0 +1,25 @@
+{
+  "name": "sahil-dreamos-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "fetch:images": "node scripts/fetch-original-images.mjs",
+    "predev": "npm run fetch:images",
+    "prebuild": "npm run fetch:images",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@types/node": "^22.18.6"
+  }
+}
