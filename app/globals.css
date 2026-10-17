@@ -1,7 +1,7 @@
 /* Outside the DreamOS canvas. The original CodePen styles remain in dreamos.css. */
 html { min-height: 100%; }
 body {
-  background: radial-gradient(ellipse at 50% 0%, #231c30 0%, #11111b 45%, #090b10 100%);
+  background: radial-gradient(ellipse at 50% 0%, #222224 0%, #111112 45%, #050506 100%);
   position: relative;
   z-index: 1;
   margin: 20px auto;

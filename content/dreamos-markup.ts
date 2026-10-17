@@ -74,7 +74,7 @@ No need to search through the entire CSS.
 
 ═══════════════════════════════════════════════════════════════════
 -->
-<div class="wrap theme-midnight">
+<div class="wrap theme-graphite">
 <div class="wrapTop">sahil_kumar_portfolio.exe <button onclick="mahriShowDialog()" title="Get in touch">✉</button>
 </div>
 <div class="aura auraone"></div>

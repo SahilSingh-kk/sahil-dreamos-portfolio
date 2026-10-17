@@ -60,3 +60,10 @@ The three featured images are sourced **unchanged** from the original portfolio 
 - `chanteur-designs.jpg`
 
 Images are fetched into `public/projects/original/` on the first `npm run dev` or `npm run build` using `npm run fetch:images`. They are not generated illustrations and are used in the **center featured project slides and corresponding gallery/projects windows**. To download images in advance, run `npm run fetch:images` with internet access. The original JPEG bytes are not embedded in this source ZIP because the source host wasn't directly accessible from the packaging environment; the project downloads them automatically.
+
+
+## Theme update — Graphite / Amber
+
+The active theme is `theme-graphite`. Main backgrounds are black and charcoal; secondary surfaces are neutral grey. Interactive highlights use `#FFC663`. Edit these colors near the end of `app/dreamos.css` (the `SAHIL / GRAPHITE + AMBER THEME` section). The original JPG project screenshots, sections, playlist and animations remain unchanged.
+
+After updating the project, commit and push to GitHub main to trigger an automatic Vercel redeploy.

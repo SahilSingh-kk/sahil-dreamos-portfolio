@@ -3273,164 +3273,238 @@
 .wrap .dreamlog .lognote { margin-top: 8px; padding-top: 7px; }
 
 /* ======================================================================
-   SAHIL / MIDNIGHT IRIS THEME — palette-only treatment for DreamOS.
-   Original pixel layout, component dimensions, positions and motion retained.
-   Customize the colors here; no layout rewrite required.
+   SAHIL / GRAPHITE + AMBER THEME
+   Dark monochrome surfaces. One deliberate highlight: #FFC663.
+   Layout, motion, dimensions and positioning remain unchanged.
    ====================================================================== */
-.wrap.theme-midnight {
-  --bg-deep: #080a11;
-  --bg-night: #1a1627;
-  --bg-soft: #0c0f19;
-  --wrap-gradient-a: #090b13;
-  --wrap-gradient-b: #171628;
-  --wrap-gradient-c: #090c15;
-  --pearl: #f4eef9;
-  --rose: #c7accd;
-  --hotrose: #cda2e8;
-  --aqua: #86cfc8;
-  --lilac: #968fc2;
-  --rgb-pearl: 244, 238, 249;
-  --rgb-rose: 199, 172, 205;
-  --rgb-hotrose: 205, 162, 232;
-  --rgb-aqua: 134, 207, 200;
-  --rgb-lilac: 150, 143, 194;
-  --rgb-surface: 24, 27, 41;
-  --rgb-surface-soft: 22, 24, 37;
-  --rgb-highlight: 188, 194, 223;
-  --rgb-line: 105, 105, 135;
-  --rgb-caption: 6, 9, 16;
-  --text: #f2eaf6;
-  --text-soft: #d3c5dd;
-  --text-muted: #b79dc1;
-  --text-dark: #272139;
-  --paper: #151923;
-  --paper2: #242236;
-  --paper-text: #e8e3ee;
-  --quote-bg: #242236;
-  --quote-text: #f4e8f8;
-  --panel-glass: rgba(28, 30, 45, .6);
-  --panel-dark: rgba(9, 10, 19, .7);
-  --top-bg: rgba(48, 39, 64, .7);
-  --top-bg2: rgba(39, 58, 67, .7);
-  --border: #77718f;
-  --border-bright: #a69cbd;
-  --button-bg: #282639;
-  --button-bg2: #4a3657;
-  --button-bg3: #294548;
-  --button-text: #f9eefb;
-  --image-brightness: .91;
-  --image-saturation: .83;
-  --image-contrast: 1.11;
-  --image-hue: 0deg;
-  --mist-opacity: .35;
-  --window-bg: #141725;
-  --window-top-a: #3c2a4f;
-  --window-top-b: #24454b;
-  --window-border: #857b9a;
-  --window-shadow: #06070c;
-  --window-text: #e8e3ee;
-  --window-title: #d5afea;
-  --line: #514e68;
-  --line-soft: #5c596e;
-  --ink-soft: #c7b6d2;
-  --ink-muted: #b3a4bd;
-  --look-title: #d9adeb;
-  --palette-pink: #976585;
-  --palette-pearl: #cdc5d9;
-  --palette-aqua: #7aaea9;
-  --palette-lilac: #6d658e;
-  --palette-blue: #546f8b;
-  --palette-extra: #352e4e;
-  --scroll-track: rgba(15, 19, 31, .92);
-  --scroll-thumb: rgba(150, 122, 173, .64);
-  --scroll-thumb-hover: rgba(186, 158, 214, .85);
-  --scroll-border: rgba(105, 96, 131, .44);
-  --scroll-glow: rgba(134, 207, 200, .13);
-  --scroll-highlight: rgba(188, 194, 223, .3);
-  --shadow-panel: 0 0 0 1px rgba(160, 141, 193, .22),
-    0 18px 44px rgba(0, 0, 0, .42), 0 0 24px rgba(146, 105, 174, .1),
-    inset 0 0 22px rgba(185, 176, 209, .025);
-  --shadow-hover: 0 0 22px rgba(174, 143, 207, .26),
-    0 0 32px rgba(91, 155, 154, .15), inset 0 0 16px rgba(192, 185, 215, .07);
-  --shadow-soft: 0 14px 30px rgba(0, 0, 0, .4);
-  border-color: rgba(167, 157, 191, .82);
-  box-shadow: 0 0 0 1px rgba(155, 140, 177, .3),
-    0 22px 70px rgba(0, 0, 0, .65),
-    0 0 46px rgba(116, 92, 141, .18),
-    inset 0 0 56px rgba(220, 198, 232, .035);
-}
-.wrap.theme-midnight:before {
-  opacity: .09;
-  filter: blur(7px) saturate(.5) brightness(.55);
-}
-.wrap.theme-midnight:after { opacity: .26; }
-.wrap.theme-midnight .wrapTop,
-.wrap.theme-midnight .windowtop {
-  background: linear-gradient(95deg, #30243e 0%, #282a42 52%, #1c4547 100%);
-  color: #e7d6ee;
-}
-.wrap.theme-midnight .player,
-.wrap.theme-midnight .main,
-.wrap.theme-midnight .side,
-.wrap.theme-midnight .fragments,
-.wrap.theme-midnight .msnstatus,
-.wrap.theme-midnight .desktopicons button {
-  background: linear-gradient(135deg, rgba(35, 32, 50, .8), rgba(20, 27, 42, .79), rgba(24, 44, 45, .52));
-  border-color: rgba(133, 127, 158, .5);
-}
-.wrap.theme-midnight .player:hover,
-.wrap.theme-midnight .main:hover,
-.wrap.theme-midnight .side:hover,
-.wrap.theme-midnight .fragments:hover {
-  border-color: rgba(134, 207, 200, .56);
-}
-.wrap.theme-midnight .top,
-.wrap.theme-midnight .notetop {
-  background: linear-gradient(90deg, rgba(121, 84, 147, .23), rgba(68, 133, 134, .2), rgba(201, 169, 215, .035));
-}
-.wrap.theme-midnight .relationitem,
-.wrap.theme-midnight .relationphotos,
-.wrap.theme-midnight .relationtext,
-.wrap.theme-midnight .relationtags span,
-.wrap.theme-midnight .abouttext,
-.wrap.theme-midnight .aboutcard,
-.wrap.theme-midnight .aboutnote,
-.wrap.theme-midnight .lookcard,
-.wrap.theme-midnight .looktitle,
-.wrap.theme-midnight .lookquote,
-.wrap.theme-midnight .looksidebox,
-.wrap.theme-midnight .lookstrip,
-.wrap.theme-midnight .dreamcard,
-.wrap.theme-midnight .dreamarchive,
-.wrap.theme-midnight .dreamtop,
-.wrap.theme-midnight .windowtext {
-  background: linear-gradient(145deg, rgba(31, 32, 48, .95), rgba(19, 26, 36, .9));
-  color: var(--paper-text);
-  border-color: rgba(111, 107, 139, .5);
-}
-.wrap.theme-midnight .relationsbody {
-  background: radial-gradient(circle at 13% 22%, rgba(143, 96, 168, .15), transparent 45%),
-    radial-gradient(circle at 87% 81%, rgba(71, 139, 138, .12), transparent 42%),
-    linear-gradient(135deg, #171923, #111725);
-}
-.wrap.theme-midnight .relationinfo b { color: #c8b4d5; }
-.wrap.theme-midnight .lookfiles span { background: rgba(31, 35, 50, .9); color: var(--paper-text); }
-.wrap.theme-midnight .lookquote span { color: #d6b2ea; }
-.wrap.theme-midnight .polas button { background: linear-gradient(145deg, #d6cadf, #b9c5c9); }
-.wrap.theme-midnight .portfolio-link {
-  background: rgba(124, 107, 149, .13);
-  border-color: rgba(179, 146, 202, .46);
-  color: #dfbbf2;
-}
-.wrap.theme-midnight .portfolio-link:hover { background: rgba(117, 167, 169, .19); color: #aee2dc; }
-.wrap.theme-midnight .songinfo small a { color: #9fd6d2; text-decoration: none; font-size: 9px; }
-.wrap.theme-midnight .songinfo small a:hover { color: #f1caff; text-decoration: underline; }
-.wrap.theme-midnight .miniplaylist b { color: #d5b3e4; letter-spacing: .1px; }
-.wrap.theme-midnight .episodearchive button.active,
-.wrap.theme-midnight .miniplaylist button.active { border-color: rgba(134, 207, 200, .45); }
-.wrap.theme-midnight .coverbox { background: linear-gradient(125deg, #3d354f, #476b6b); }
-.wrap.theme-midnight .coverbox img { filter: saturate(.9) contrast(1.04); }
+.wrap.theme-graphite {
+  --bg-deep: #080809;
+  --bg-night: #19191b;
+  --bg-soft: #101012;
+  --wrap-gradient-a: #080809;
+  --wrap-gradient-b: #202022;
+  --wrap-gradient-c: #0c0c0e;
 
-/* Keep the polaroid captions legible against their pale photo-paper backing. */
-.wrap.theme-midnight .polas button { color: #2f273b; }
-.wrap.theme-midnight .polas button span { color: #292036; }
+  --pearl: #f5f5f5;
+  --rose: #b6b6ba;
+  --hotrose: #FFC663;
+  --aqua: #d2d2d4;
+  --lilac: #98989e;
+  --rgb-pearl: 245, 245, 245;
+  --rgb-rose: 182, 182, 186;
+  --rgb-hotrose: 255, 198, 99;
+  --rgb-aqua: 210, 210, 212;
+  --rgb-lilac: 152, 152, 158;
+  --rgb-surface: 28, 28, 30;
+  --rgb-surface-soft: 32, 32, 35;
+  --rgb-highlight: 198, 198, 202;
+  --rgb-line: 100, 100, 104;
+  --rgb-caption: 8, 8, 10;
+
+  --text: #f5f5f5;
+  --text-soft: #d0d0d2;
+  --text-muted: #aaa9ae;
+  --text-dark: #252527;
+  --paper: #19191b;
+  --paper2: #27272a;
+  --paper-text: #e8e8e9;
+  --quote-bg: #28282b;
+  --quote-text: #fff4df;
+  --panel-glass: rgba(38, 38, 40, .65);
+  --panel-dark: rgba(10, 10, 11, .82);
+  --top-bg: rgba(36, 36, 39, .80);
+  --top-bg2: rgba(44, 44, 46, .78);
+  --border: #59595d;
+  --border-bright: #858589;
+  --button-bg: #28282b;
+  --button-bg2: #3c3c3f;
+  --button-bg3: #222225;
+  --button-text: #f6f6f7;
+
+  --image-brightness: 1;
+  --image-saturation: 1;
+  --image-contrast: 1;
+  --image-hue: 0deg;
+  --mist-opacity: .23;
+  --window-bg: #171719;
+  --window-top-a: #262628;
+  --window-top-b: #414143;
+  --window-border: #77777a;
+  --window-shadow: #060607;
+  --window-text: #ececed;
+  --window-title: #FFC663;
+  --line: #4d4d50;
+  --line-soft: #5e5e61;
+  --ink-soft: #c5c5c8;
+  --ink-muted: #a5a5a9;
+  --look-title: #FFC663;
+  --palette-pink: #FFC663;
+  --palette-pearl: #efefef;
+  --palette-aqua: #c7c7ca;
+  --palette-lilac: #929296;
+  --palette-blue: #555559;
+  --palette-extra: #222224;
+  --scroll-track: rgba(19, 19, 21, .95);
+  --scroll-thumb: rgba(130, 130, 132, .72);
+  --scroll-thumb-hover: rgba(255, 198, 99, .80);
+  --scroll-border: rgba(92, 92, 94, .55);
+  --scroll-glow: rgba(255, 198, 99, .13);
+  --scroll-highlight: rgba(215, 215, 216, .36);
+  --shadow-panel:
+    0 0 0 1px rgba(165, 165, 170, .19),
+    0 18px 44px rgba(0, 0, 0, .58),
+    0 0 25px rgba(255, 198, 99, .045),
+    inset 0 0 22px rgba(225, 225, 225, .035);
+  --shadow-hover:
+    0 0 26px rgba(255, 198, 99, .22),
+    0 0 34px rgba(188, 188, 190, .09),
+    inset 0 0 18px rgba(225, 225, 225, .045);
+  --shadow-soft: 0 14px 30px rgba(0, 0, 0, .48);
+
+  border-color: #77777b;
+  box-shadow:
+    0 0 0 1px rgba(255, 198, 99, .14),
+    0 22px 70px rgba(0, 0, 0, .80),
+    0 0 45px rgba(255, 198, 99, .045),
+    inset 0 0 58px rgba(220, 220, 220, .02);
+}
+
+/* Keep the original background composition without the purple photo cast. */
+.wrap.theme-graphite:before {
+  opacity: .045;
+  filter: grayscale(1) blur(7px) brightness(.45);
+}
+.wrap.theme-graphite:after { opacity: .24; }
+.wrap.theme-graphite .wrapTop,
+.wrap.theme-graphite .windowtop {
+  background: linear-gradient(95deg, #242426 0%, #353538 60%, #454548 100%);
+  color: #f0f0f0;
+  border-bottom-color: #747477;
+}
+.wrap.theme-graphite .wrapTop button,
+.wrap.theme-graphite .windowtop button {
+  background: #242426;
+  color: #FFC663;
+  border-color: #828285;
+}
+
+/* Neutral glass: outlines and shadows are charcoal with restrained amber on hover. */
+.wrap.theme-graphite .player,
+.wrap.theme-graphite .main,
+.wrap.theme-graphite .side,
+.wrap.theme-graphite .fragments,
+.wrap.theme-graphite .msnstatus,
+.wrap.theme-graphite .desktopicons button {
+  background:
+    linear-gradient(transparent 50%, rgba(0, 0, 0, .055) 51%),
+    linear-gradient(140deg, rgba(45, 45, 48, .92), rgba(21, 21, 23, .90) 70%, rgba(30, 30, 32, .88));
+  background-size: 100% 4px, 100% 100%;
+  border-color: rgba(137, 137, 140, .45);
+}
+.wrap.theme-graphite .player:hover,
+.wrap.theme-graphite .main:hover,
+.wrap.theme-graphite .side:hover,
+.wrap.theme-graphite .fragments:hover,
+.wrap.theme-graphite .desktopicons button:hover {
+  border-color: rgba(255, 198, 99, .58);
+}
+.wrap.theme-graphite .top,
+.wrap.theme-graphite .notetop {
+  background: linear-gradient(90deg, rgba(92, 92, 95, .31), rgba(60, 60, 63, .15), rgba(125, 125, 128, .10));
+  border-bottom-color: rgba(170, 170, 174, .28);
+}
+
+/* Monochrome inner surfaces in every profile window. */
+.wrap.theme-graphite .relationitem,
+.wrap.theme-graphite .relationphotos,
+.wrap.theme-graphite .relationtext,
+.wrap.theme-graphite .relationtags span,
+.wrap.theme-graphite .abouttext,
+.wrap.theme-graphite .aboutcard,
+.wrap.theme-graphite .aboutnote,
+.wrap.theme-graphite .lookcard,
+.wrap.theme-graphite .looktitle,
+.wrap.theme-graphite .lookquote,
+.wrap.theme-graphite .looksidebox,
+.wrap.theme-graphite .lookstrip,
+.wrap.theme-graphite .dreamcard,
+.wrap.theme-graphite .dreamarchive,
+.wrap.theme-graphite .dreamtop,
+.wrap.theme-graphite .windowtext {
+  background: linear-gradient(145deg, rgba(38, 38, 40, .98), rgba(24, 24, 26, .96));
+  color: var(--paper-text);
+  border-color: rgba(107, 107, 111, .60);
+}
+.wrap.theme-graphite .relationsbody {
+  background:
+    radial-gradient(circle at 12% 21%, rgba(130, 130, 134, .08), transparent 46%),
+    radial-gradient(circle at 84% 82%, rgba(255, 198, 99, .05), transparent 44%),
+    linear-gradient(135deg, #19191b, #111113);
+}
+.wrap.theme-graphite .relationinfo b { color: #dedee0; }
+.wrap.theme-graphite .lookfiles span { background: rgba(30, 30, 33, .95); color: #eaeaea; }
+.wrap.theme-graphite .lookquote span { color: #FFC663; }
+.wrap.theme-graphite .polas button {
+  background: linear-gradient(145deg, #e4e4e5, #bfbfc2);
+  color: #222224;
+}
+.wrap.theme-graphite .polas button span { color: #252526; }
+.wrap.theme-graphite .portfolio-link {
+  background: rgba(255, 198, 99, .055);
+  border-color: rgba(255, 198, 99, .52);
+  color: #FFC663;
+}
+.wrap.theme-graphite .portfolio-link:hover {
+  background: rgba(255, 198, 99, .18);
+  color: #ffe1a8;
+}
+.wrap.theme-graphite .songinfo small a {
+  color: #FFC663;
+  text-decoration: none;
+  font-size: 9px;
+}
+.wrap.theme-graphite .songinfo small a:hover { color: #ffe1a8; text-decoration: underline; }
+.wrap.theme-graphite .miniplaylist b { color: #FFC663; letter-spacing: .1px; }
+.wrap.theme-graphite .episodearchive button.active,
+.wrap.theme-graphite .miniplaylist button.active {
+  border-color: rgba(255, 198, 99, .58);
+  color: #FFC663;
+}
+.wrap.theme-graphite .coverbox { background: linear-gradient(125deg, #3d3d40, #FFC663); }
+.wrap.theme-graphite .coverbox img { filter: contrast(1.02); }
+.wrap.theme-graphite .visualizer i,
+.wrap.theme-graphite .dreamlog u,
+.wrap.theme-graphite .aboutmeter b,
+.wrap.theme-graphite .dreammeter b,
+.wrap.theme-graphite .petbar b,
+.wrap.theme-graphite .statusrow b,
+.wrap.theme-graphite .fakeaudio strong {
+  background: linear-gradient(90deg, #68686c, #FFC663);
+}
+.wrap.theme-graphite .slidebutton:hover,
+.wrap.theme-graphite .controls button:hover,
+.wrap.theme-graphite .petbuttons button:hover,
+.wrap.theme-graphite .episodearchive button:hover {
+  border-color: #FFC663;
+  color: #FFC663;
+}
+.wrap.theme-graphite .bubble,
+.wrap.theme-graphite .bubble:after { background: #29292d; color: #f4f4f5; }
+.wrap.theme-graphite .bubble { border-color: rgba(255, 198, 99, .60); }
+.wrap.theme-graphite .bubble:after { border-right: 1px solid rgba(255, 198, 99, .24); border-bottom: 1px solid rgba(255, 198, 99, .24); }
+.wrap.theme-graphite .pet .cloudpart {
+  background: linear-gradient(145deg, #ececed, #bcbcc0, #79797e);
+  border-color: rgba(255, 198, 99, .18);
+  box-shadow: 0 0 22px rgba(255, 198, 99, .12), inset 0 0 17px rgba(255, 255, 255, .31);
+}
+.wrap.theme-graphite .pet.evolved .cloudpart {
+  background: linear-gradient(145deg, #fff1d4, #FFC663, #818187);
+}
+.wrap.theme-graphite .petname { color: #FFC663; text-shadow: 0 0 12px rgba(255, 198, 99, .20); }
+.wrap.theme-graphite .petfx { color: #FFC663; text-shadow: 0 0 9px rgba(255, 198, 99, .35); }
+.wrap.theme-graphite .lookpalette span { border-color: rgba(130, 130, 133, .8); }
+
+/* Bottom creator line sits outside the themed desktop node. */
+.dreamos-canvas > .credits { color: #a7a7aa; }
+.dreamos-canvas > .credits strong { color: #FFC663; }
+.dreamos-canvas > .credits a { color: #FFC663; }
